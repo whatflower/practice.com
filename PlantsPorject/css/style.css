@@ -1,0 +1,145 @@
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	/* width: 100%;
+    height: 100%; ;*/
+}
+a{
+	 text-decoration: none;
+}
+.header {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	height: 44px;
+	background-color: purple;
+	z-index: 100;
+}
+
+.header div {
+	padding: 10px;
+	text-align: center;
+	color: #ffffff;
+}
+
+.arrow-left  {position: absolute;}
+.arrow-left>a{
+	padding: 10px;
+	color: aliceblue;
+	font-size: 14px;
+}
+.arrow-left>a::before {
+	content: "";
+	display: inline-block;
+	-webkit-transform: rotate(45deg);
+	-ms-transform:  rotate(45deg);
+	transform:  rotate(45deg);
+	height: .5rem;
+	width: .5rem;
+	border-width: 0 0 2px 2px;
+	border-color: #66666;
+	border-style: solid;
+	position: relative;
+	top: 0;
+}
+
+.main {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	padding: 15px 15px;
+	padding-top: 55px;
+}
+
+.main .titlesytle {
+	text-align: center;
+	font-size: 24px;
+	color: darkred;
+	font-weight: 600;
+	/* font-family: "微软雅黑"; */
+}
+
+.main .titlesytle p {
+	margin: 0;
+	font-size: 16px;
+	font-family: -webkit-pictograph;
+}
+
+.main .contentstyle {
+	font-family: "楷体";
+	font-size: 22px;
+	text-indent: 44px;
+	line-height: 1.4;
+	/* color: #000000; */
+}
+
+.bgstyle {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-image: url('../images/46c84571bfbf3b112f8f38e50b7dd9c4.jpg');
+	background-size: 100% 100%;
+	opacity: 0.3;
+}
+
+.img-big {
+	width: 90%;
+	height: auto;
+	padding: 0px 5px 10px 5px;
+}
+
+.footer {
+	background-color: darkgray;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	height: 44px;
+	z-index: 100;
+	font-size:12px;
+	color: #333333;
+}
+
+.footer>div {
+	text-align: center;
+	padding: 15px;
+}
+
+.text {
+	text-align: center;
+	font-size: 24px;
+	color: darkred;
+	font-weight: 600;
+	/* margin: 0; */
+	font-size: 16px;
+	font-family: "-webkit-pictograph";
+	border: 1px solid purple;
+	margin: 7px 0;
+	background-color: #efe5ef;
+	cursor: pointer;
+}
+.text:hover{
+	opacity: 0.8;
+}
+.text a:hover{
+	color: red;
+}
+.text p{
+	margin: 0;
+	padding: 10px;
+	letter-spacing: 1rem;
+}
+.text a{
+	color: #bf2f2f;
+}
+/* .text:nth-child(odd){
+	border: 1px solid blue;
+} */
+.main .textcenterstyle{
+	text-align: center;
+	text-indent: 0;
+}
